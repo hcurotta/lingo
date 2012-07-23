@@ -1,0 +1,22 @@
+<h1>CORPORATE WANK</h1>
+<h2>A handy glossary for new players</h2>
+
+<div class = "nav"><%= link_to "Add Term", new_word_path, :class => 'button' %></div>
+
+<table class="main">
+	<% @words.each do |word| %>
+	<tr>
+			<td class="record"><%= link_to image_tag("thumb-white.png"), "/words/vote_up/"+word.id.to_s %></td>
+			<td id = "votes" class="record"><%= word.vote %></td>
+			<td class ="record">
+				<ul class = "term-def-pair">
+					<li id = "term"><%=word.term  %></li>
+					<li id = "definition"><%=word.def  %></li>
+				</ul>
+			</td>
+			<td><td class="record"><%= link_to image_tag("flag.png"), "/words/flag/"+word.id.to_s, :class => 'flag' %></td>
+			</td>
+	</tr>
+	<% end %>
+	
+</table>

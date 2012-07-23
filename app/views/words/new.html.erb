@@ -1,0 +1,15 @@
+<h1>Corporate Wank</h1>
+
+<div id="form">
+<p>Add a new Term</p>
+
+<%= form_for @word do |f|  %>
+<table>
+	<tr>
+		<td><%= f.text_field :term  %></td>
+		<td><%= f.text_area :def, rows:1  %></td>
+		<td><%= f.submit%></td>
+	</tr>
+	
+<% end %>
+</table>

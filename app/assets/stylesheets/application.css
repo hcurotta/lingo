@@ -1,0 +1,152 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body{
+	
+	background-image: url('pinstriped_suit.png');
+	font-family: 'Rokkitt', serif;	
+	color:white;
+}
+
+
+.flag{
+	opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+
+.flag:hover{
+	opacity:1;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#votes {
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+	font-family: 'Salsa', cursive;	
+	color: white;
+}
+
+#term {
+	font-weight:700;
+	font-size:30px;
+	text-transform: uppercase;
+	
+}
+
+
+#definition {
+	font-weight:400;
+}
+
+table.main{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+li.record {
+	display:inline;
+}
+
+ul {
+	list-style-type:none;	
+}
+
+
+
+ul.term-def-pair{
+	list-style-type:none;
+	max-width:800px;
+	background: #404853;
+	background: linear-gradient(#687587, #404853);
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	padding: 0 10px;
+	margin: 40px 10px 0 10px;
+	line-height: 38px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
+  	border-right: 1px solid rgba(0, 0, 0, 0.2);
+ 
+}
+
+li{
+	
+	font-weight: 400;
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 80px;
+	text-align: center;
+	color: white;	
+}
+
+h2 {
+	font-size: 40px;
+	text-align: center;
+	color: white;
+}
+
+.nav {
+	text-align:center;
+}
+
+.button {
+   background-color: rgba(18,127,210,1);
+   background-image: -webkit-linear-gradient(top, rgba(54,168,234,1) 0%,rgba(18,127,210,1) 100%);
+   background-image:    -moz-linear-gradient(top, rgba(54,168,234,1) 0%,rgba(18,127,210,1) 100%);
+   background-image:     -ms-linear-gradient(top, rgba(54,168,234,1) 0%,rgba(18,127,210,1) 100%);
+   background-image:      -o-linear-gradient(top, rgba(54,168,234,1) 0%,rgba(18,127,210,1) 100%);
+   background-image:         linear-gradient(top, rgba(54,168,234,1) 0%,rgba(18,127,210,1) 100%);
+   -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.4)inset, 1px 0px 0px 0px rgba(255,255,255,0.4)inset, -1px 0px 0px 0px rgba(255,255,255,0.4)inset;
+      -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.4)inset, 1px 0px 0px 0px rgba(255,255,255,0.4)inset, -1px 0px 0px 0px rgba(255,255,255,0.4)inset;
+           box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.4)inset, 1px 0px 0px 0px rgba(255,255,255,0.4)inset, -1px 0px 0px 0px rgba(255,255,255,0.4)inset;
+   border: solid 1px rgba(3,94,163,1);
+   -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+           border-radius: 6px;
+   width: 210px;
+   display: inline-block;
+   font-size: 16px;
+   line-height: 40px;
+   text-align: center;
+	font-size: 25px;
+	text-decoration:none;
+   color: rgba(255,255,255,1);
+   text-shadow: 0px 1px 1px rgba(0,0,0,0.33)
+}
+.button:hover {
+   background-image: -webkit-linear-gradient(top, rgba(47,144,213,1) 0%,rgba(3,81,183,1) 100%);
+   background-image:    -moz-linear-gradient(top, rgba(47,144,213,1) 0%,rgba(3,81,183,1) 100%);
+   background-image:     -ms-linear-gradient(top, rgba(47,144,213,1) 0%,rgba(3,81,183,1) 100%);
+   background-image:      -o-linear-gradient(top, rgba(47,144,213,1) 0%,rgba(3,81,183,1) 100%);
+   background-image:         linear-gradient(top, rgba(47,144,213,1) 0%,rgba(3,81,183,1) 100%);
+   -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.4)inset, 0px -1px 0px 0px rgba(255,255,255,0.2)inset;
+      -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.4)inset, 0px -1px 0px 0px rgba(255,255,255,0.2)inset;
+           box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.4)inset, 0px -1px 0px 0px rgba(255,255,255,0.2)inset;
+   border: solid 1px rgba(0,52,129,1);
+}
+.button:active {
+   background-image: none;
+   -webkit-box-shadow: 0px 0px 8px 2px rgba(0,61,127,0.4)inset, 0px 0px 2px 2px rgba(0,60,125,0.2)inset;
+      -moz-box-shadow: 0px 0px 8px 2px rgba(0,61,127,0.4)inset, 0px 0px 2px 2px rgba(0,60,125,0.2)inset;
+           box-shadow: 0px 0px 8px 2px rgba(0,61,127,0.4)inset, 0px 0px 2px 2px rgba(0,60,125,0.2)inset;
+   border: solid 1px rgba(0,70,131,1);
+}

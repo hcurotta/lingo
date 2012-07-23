@@ -1,0 +1,17 @@
+<h1><%= link_to "CORPORATE WANK", words_path %></h1>
+<h2>Flagged Words</h2>
+
+<table class="main">
+	<% @words.each do |word| %>
+	<tr>
+			<td class="record"><%= link_to image_tag("delete.png"), "/words/delete/"+word.id.to_s %></td>
+			<td class ="record">
+				<ul class = "term-def-pair">
+					<li id = "term"><%=word.term  %></li>
+					<li id = "definition"><%=word.def  %></li>
+					<li align='right'><%= link_to image_tag("flag.png"), "/words/unflag/"+word.id.to_s, :class => 'flag' %></li>
+				</ul>
+	</tr>
+	<% end %>
+	
+</table>

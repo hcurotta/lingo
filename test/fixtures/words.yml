@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  term: MyString
+  def: MyText
+  vote: 1
+  flagged: false
+
+two:
+  term: MyString
+  def: MyText
+  vote: 1
+  flagged: false
