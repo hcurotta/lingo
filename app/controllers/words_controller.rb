@@ -5,6 +5,10 @@ class WordsController < ApplicationController
   
   end
   
+  def show
+    @word = Word.find(params[:id])
+  end
+  
   def flagged
     @words = Word.find(:all, :order => "vote DESC", :conditions => ['flagged = ?', true])
     

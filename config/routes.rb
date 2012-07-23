@@ -3,8 +3,11 @@ Lingo::Application.routes.draw do
 get "/" => "Words#index"
 
 get "/words" => "Words#index", :as => :words
-
 get "/words/new" => "Words#new", :as => :new_word
+
+
+get "/words/:id" => "Words#show", :as => :show_word
+
 
 get "/words/flagged" => "Words#flagged", :as => :flagged_words
 

@@ -1,15 +1,18 @@
-<h1>Corporate Wank</h1>
+<h1></h1>
 
 <div id="form">
-<p>Add a new Term</p>
+<h2>Add a new Term</h2>
 
-<%= form_for @word do |f|  %>
-<table>
-	<tr>
-		<td><%= f.text_field :term  %></td>
-		<td><%= f.text_area :def, rows:1  %></td>
-		<td><%= f.submit%></td>
-	</tr>
-	
-<% end %>
-</table>
+
+<div id="new-form">
+	<%= form_for @word do |f|  %>
+	<ul>
+			<li>Word/Phrase<br><%= f.text_field :term  %></li>
+			<li>Definition<br><%= f.text_area :def, rows:5  %></li>
+			<li><%= f.submit 'Add word', :class => 'btn btn-success'%></li>
+
+	</ul>
+	<% end %>
+</div>
+
+
