@@ -45,13 +45,13 @@ body{
 	
 }
 
-.flag{
+a.flag{
 	opacity:0.4;
 	filter:alpha(opacity=40); /* For IE8 and earlier */
 }
 
 
-.flag:hover{
+a.flag:hover{
 	opacity:1;
 	filter:alpha(opacity=40); /* For IE8 and earlier */
 }

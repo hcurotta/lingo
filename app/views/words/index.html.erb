@@ -7,7 +7,7 @@
 	<% @words.each do |word| %>
 	<tr>
 			<td class="record" id="flag-etc">
-				<%= link_to image_tag("thumb-white.png"), "/words/vote_up/"+word.id.to_s %>
+				<%= link_to image_tag("thumb-white.png"), "/words/vote_up/"+word.id.to_s, :class => "tooltip", :title => "VOTE UP!" %>
 			</td>
 			
 			
@@ -19,10 +19,12 @@
 				</ul>
 			</td>
 			<td class="record" id = "flag-etc">
-			<%= link_to image_tag("flag.png"), "/words/flag/"+word.id.to_s, :class => 'flag' %>	<br>
-				<%= link_to image_tag("twitter-bird-dark-bgs-small.png"), "http://twitter.com/home?status= Corporate dictionary: #{word.term} http://fathomless-meadow-2743.herokuapp.com/words/"+word.id.to_s %>
+				<%= link_to image_tag("flag.png"), "/words/flag/"+word.id.to_s, :class => 'tooltip flag', :title => "Report Abuse" %>
+			<br>
+			<%= link_to image_tag("twitter-bird-dark-bgs-small.png"), "http://twitter.com/home?status= Corporate dictionary: #{word.term} http://fathomless-meadow-2743.herokuapp.com/words/"+word.id.to_s, :class => "tooltip", :title => "Share on Twitter" %>
 			</td>
 	</tr>
 	<% end %>
 	
 </table>
+

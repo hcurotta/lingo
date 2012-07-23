@@ -8,9 +8,18 @@
 <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 
 
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+
+  <%= stylesheet_link_tag "application", "tipsy", :media => "all" %>
+
+  <%= javascript_include_tag "jquery", "jquery.tipsy", "application" %>
   <%= csrf_meta_tags %>
+
+  <script type='text/javascript'>
+   $(function() {
+	$('a.tooltip').tipsy({fade: true});
+   });
+
+  </script>
 
 </head>
 <body>
@@ -19,3 +28,4 @@
 
 </body>
 </html>
+
