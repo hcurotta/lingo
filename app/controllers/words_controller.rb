@@ -13,7 +13,7 @@ class WordsController < ApplicationController
   def delete
     w = Word.find(params[:id])
     w.destroy
-    redirect_to "http://localhost:3000/words/flagged"
+    redirect_to "/words/flagged"
     
   end
   
@@ -29,7 +29,7 @@ class WordsController < ApplicationController
     w.flagged = false
     w.save
     
-    redirect_to "http://localhost:3000/words"
+    redirect_to "/words"
   end
   
   def vote_up
@@ -37,7 +37,7 @@ class WordsController < ApplicationController
     w.vote += 1 
     w.save
     
-    redirect_to "http://localhost:3000/words"
+    redirect_to "/words"
   end
   
   def flag
@@ -46,7 +46,7 @@ class WordsController < ApplicationController
     w.flagged = true 
     w.save
     
-    redirect_to "http://localhost:3000/words"
+    redirect_to "/words"
   end
   
   def unflag
@@ -54,7 +54,7 @@ class WordsController < ApplicationController
     w.flagged = false 
     w.save
     
-    redirect_to "http://localhost:3000/words/flagged"
+    redirect_to "/words/flagged"
   end
   
 end
