@@ -60,6 +60,10 @@ module Lingo
     config.assets.version = '1.0'
     
     
-    config.assets.precompile += %w( *.js *.css )
+    # config.assets.precompile += %w( *.js *.css )
+    
+    # Prevent heroku from loading the entire Rails env when running rake for precompilation.
+    config.assets.initialize_on_precompile = false
+    
   end
 end
